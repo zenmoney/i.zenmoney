@@ -1,0 +1,362 @@
+.zenForm{
+	background:#ffffff;
+	overflow:hidden;
+	position:relative;
+	padding-top: 40px;
+}
+
+.fixed .zenForm{
+	padding-top: 40px;
+}
+.zenForm{
+	overflow:hidden;
+	height:auto;
+}
+.zenForm.close{
+	height:85px;
+}
+.zf-f-type-hidder{
+	overflow:hidden;
+	height:auto;
+}
+.zenForm.close .zf-f-type-hidder{
+	height:0;
+}
+
+.zf-f-alert{
+	display:none;
+	background:#99cc33;
+	color:#ffffff;
+	text-shadow:1px 1px 0px rgba(0,0,0,0.25);
+	margin:10px 0px 0px 0px;
+	padding:10px;
+}
+.zf-f-alert{
+	-moz-transition: opacity 300ms ease-in-out;
+	-o-transition: opacity 300ms ease-in-out;
+	-webkit-transition: opacity 300ms ease-in-out;
+	transition: opacity 300ms ease-in-out;
+}
+.zf-text{
+	padding-left:20px;
+	text-shadow:0px -1px 0px #c3352a;
+}
+.zf-f-sum input, .zf-f-category_expense select, .zf-f-category_income select, .zf-f-account select, .zf-f-account_transfer select, .zf-f-sum_transfer input, .zf-f-date input, .zf-f-payee input, .zf-f-comment input, .tags-input {
+	border:2px solid #7a9dbb;
+	font-size:17px;
+	color:#333333;
+	background:#ffffff;
+	padding:6px 10px 4px 10px;
+	margin:0px;
+	border-radius:0;
+}
+.zenForm select{
+	border:2px solid #c0d3e3;
+}
+.zf-f-sum, .zf-f-sum_transfer{
+	border:2px solid #7a9dbb;
+}
+.zf-f-sum .row, .zf-f-sum_transfer .row{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+.zf-f-sum .sign, .zf-f-sum_transfer .sign{
+	position:absolute;
+	left:5px;
+	top:5px;
+	font-size:17px;
+}
+.zf-f-sum input, .zf-f-sum_transfer input{
+	width:100%;
+	margin:0px;
+	border:none;
+	padding-left:18px;
+}
+.zf-f-sum .currency, .zf-f-sum_transfer .currency{
+	position:absolute;
+	right:5px;
+	top:6px;
+	font-size:14px;
+}
+
+
+.zf-f-payee, .zf-f-comment{
+	padding-left:11px;
+	padding-right:11px;
+}
+.zf-f-date input, .zf-f-payee input, .zf-f-comment input,  .tags-input{
+	margin-left:-11px;
+	margin-right:-11px;
+	width:100%;
+}
+.zf-f-payee input, .zf-f-comment input{
+	border-color:#7a9dbb;
+}
+.zf-f-payee input:empty, .zf-f-comment input:empty, .tags-input{
+	border-color:#e9e9e9;
+}
+.zf-f-category_expense select, .zf-f-category_income select, .zf-f-account select, .zf-f-account_transfer select{
+	width:100%;
+	background:url( ../images/arrows.png ) no-repeat right -60px #E2F2FF;
+}
+.zf-form{
+	padding:0px 10px 0px 10px;
+}
+.zf-f-type{
+	width:100%;
+	display:table;
+	font-size:17px;
+	color:#ffffff;
+	text-shadow:0px -1px 0px #c3352a;
+	margin:0px 0px 0px 0px;
+	overflow:hidden;
+}
+.zf-f-t-wrap{
+	display:table-row;
+}
+.zf-f-type label{
+	display:table-cell;
+	text-align:center;
+}
+.zf-f-type input{
+	display:none;
+}
+.zf-f-t-text{
+	display:block;
+	padding:10px 0px 6px 0px;
+	background:#f76936;
+}
+.zf-f-type input:checked+.zf-f-t-text{
+	background:#ef4135;
+}
+.zf-f-sum, .zf-f-category_expense, .zf-f-category_income, .zf-f-account, .zf-f-account_transfer, .zf-f-sum_transfer, .zf-f-date, .zf-f-extras, .zf-f-payee, .zf-f-comment, .zf-f-tags{
+	margin-bottom:10px;
+}
+
+.zf-f-date input{
+	text-align:center;
+	background:#E2F2FF;
+}
+.zf-f-d-icon_left{
+	position:absolute;
+	z-index:100;
+	width:30px;
+	height:30px;
+	background:url( ../images/arrows.png ) no-repeat left -30px;
+	margin-left:-10px;
+}
+.zf-f-d-icon_right{
+	position:absolute;
+	z-index:100;
+	width:30px;
+	height:30px;
+	background:url( ../images/arrows.png ) no-repeat left 0px;
+	margin-left:-20px;
+}
+
+.zf-f-extras{
+	color:#ffffff;
+	text-shadow:0px -1px 0px #c3352a;
+	
+}
+.zf-f-e-payee{
+	text-decoration:underline;
+}
+.zf-f-e-comment{
+	text-decoration:underline;
+}
+
+.zf-f-submit{
+	padding-bottom:14px;
+}
+.zf-f-submit img{
+	padding:0px;
+	margin:0px;
+}
+.zf-f-submit .zf-f-delete{
+	float:right;
+	padding:6px;
+	margin-right:-6px;
+	font-size:15px;
+	color:#ef4135;
+	font-weight:bold;
+}
+.zf-f-submit .zf-f-cancel{
+	display:none;
+}
+
+.zf-f-sum-table{
+	display:table;
+	width:100%;
+	margin:10px 0px 10px 0px;
+}
+.zf-f-sum-table .zf-f-row{
+	display:table-row;
+}
+.zf-f-sum-table .zf-f-sum{
+	display:table-cell;
+	width:45%;
+	margin:0px;
+	text-align:left;
+}
+.zf-f-sum-table .zf-f-arrow{
+	display:table-cell;
+	text-align:center;
+	width:10%;
+	font-size:20px;
+	color:#7a9dbb;
+	font-weight:bold;
+}
+.zf-f-sum-table .zf-f-sum_transfer{
+	display:table-cell;
+	width:45%;
+	margin:0px;
+	text-align:right;
+}
+.zf-f-sum-table .zf-f-sum div, .zf-f-sum-table .zf-f-sum_transfer div{
+	width:100%;
+	position:relative;
+}
+
+/* zencalendar */
+.zencalendar{
+	
+}
+.zencalendar.open .zc-close{
+	display:none;
+}
+.zencalendar.open .zc-open{
+	display:block;
+}
+.zencalendar.close .zc-close{
+	display:block;
+}
+.zencalendar.close .zc-open{
+	display:none;
+}
+.zc-close{
+	border:2px solid #c0d3e3;
+	background:#E2F2FF;
+	padding:6px 10px 4px 10px;
+}
+.zc-close .zc-c-w{
+	position:relative;
+}
+.zc-close .zc-c-w .icon-l{
+	background:url( ../images/arrows.png ) no-repeat left -28px;
+	background-size:30px 120px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	left:-12px;
+	top:-8px;
+}
+.zc-close .zc-c-w .icon-r{
+	background:url( ../images/arrows.png ) no-repeat left 2px;
+	background-size:30px 120px;
+	width:30px;
+	height:30px;
+	position:absolute;
+	right:-12px;
+	top:-8px;
+}
+.zc-close .zc-c-w .date{
+	text-align:center;
+}
+.zc-open{
+	background:#E2F2FF;
+}
+.zc-open .zc-o-h{
+	background:#E2F2FF;
+	padding:8px 12px 6px 12px;
+}
+.zc-open .zc-o-w{
+	position:relative;
+}
+.zc-open .zc-o-w .icon-l{
+	background:url( ../images/arrows.png ) no-repeat left -28px;
+	background-size:30px 120px;
+	width:30px;
+	height:100%;
+	padding:8px 0px 6px 0px;
+	position:absolute;
+	left:-12px;
+	top:-8px;
+}
+.zc-open .zc-o-w .icon-r{
+	background:url( ../images/arrows.png ) no-repeat left 2px;
+	background-size:30px 120px;
+	width:30px;
+	height:100%;
+	padding:8px 0px 6px 0px;
+	position:absolute;
+	right:-12px;
+	top:-8px;
+}
+.zc-open .zc-o-w .date{
+	text-align:center;
+}
+.zc-open .zc-o-c{
+	
+}
+.zc-open .zc-o-c table{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	border-collapse:collapse;
+	font-size:15px;
+	font-family:Helvetica, sans-serif;
+}
+.zc-open .zc-o-c table td{
+	text-align:center;
+}
+.zc-open .zc-o-c table thead td{
+	font-size:11px;
+	padding:8px 0px 10px 0px;
+	border-bottom:2px solid white;
+}
+.zc-open .zc-o-c table tbody td{
+	padding:12px 0px 12px 0px;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	border-right:1px solid white;
+}
+.zc-open .zc-o-c table tbody tr td:last-child{
+	border-right:none;
+}
+.zc-open .zc-o-c table tbody td.out{
+	color:#a1bdd4;
+}
+.zc-open .zc-o-c table tbody td.active{
+	color:#ffffff;
+	font-weight:bold;
+	background:#7a9dbb;
+}
+.zc-open .zc-o-c table tbody td.ontap{
+	color:#ffffff;
+	background:#7a9dbb;
+}
+/* zencalendar */
+
+.zf-f-tagSelect {
+    margin-bottom: 5px;
+}
+
+.zf-f-tagList {
+    /*border-right: 0px !important;*/
+}
+
+.zf-f-tagAddBtn {
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border: 2px solid #C0D3E3;
+    background-color:  #C0D3E3;
+    background-image: url(../images/btn-addtag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    margin-top: 3px;
+    margin-left: 8px;
+}

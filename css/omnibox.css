@@ -1,0 +1,132 @@
+.omnibox {
+    padding: 0px;
+    border: 2px solid #7A9DBB;
+/*    outline-color: blue;*/
+    cursor: text;
+    background: #fff;
+    overflow: visible;
+}
+
+.omnibox input {
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 17px;
+    width: 100%;
+    margin: 0px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.omnibox .controls {
+/*    display: inline-block;*/
+}
+
+.omnibox ul {
+    width: 100%;
+    overflow: auto;
+    margin: 0px;
+    padding: 0px;
+    display: none;
+    border-radius-bottom: 5px;
+    border: 2px solid #C0D3E3;
+    border-top: 0px;
+    margin-top: 2px;
+    margin-left: -2px;
+    position: absolute;
+    z-index: 1000;
+    padding-left: -5px;
+    color: #444;
+    cursor: default;
+}
+
+.omnibox ul i {
+    width: 100;
+    display: block;
+    position: relative;
+    font-style: normal;
+    text-align: center;
+    color: #ccc;
+}
+
+.omnibox li {
+    background: #DEEAF4;
+    margin: none;
+    margin-top: 1px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: none;
+}
+
+.omnibox li:first-child {
+    margin-top: 0px;
+}
+
+.omnibox p {
+    padding-left: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.omnibox li p {
+    padding: 5px;
+    padding-left: 12px;
+}
+
+.omnibox ul div {
+/*    border-bottom: 1px solid #ccc;*/
+    font-size: small;
+    padding-top: 10px;
+    margin-left: -5px;
+    padding: 5px;
+    padding-bottom: 0px;
+    color: #ccc;
+    display: none;
+}
+
+.omnibox li.selected {
+    background: #DEEAF4;
+    color: #000;
+}
+
+.omnibox .sel {
+/*    display: inline-block;*/
+}
+
+.omnibox .sel span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 3px;
+    background-color: #7A9DBB;
+    color: white;
+/*    border-radius: 3px;*/
+    margin-left: 4px;
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-right: 18px;
+    border-right: 5px solid #7A9DBB;
+    background-image: url("/images/btn-deltag.png");
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+}
+
+.retina .omnibox .sel span {
+    background-size: 11px;
+    padding-right: 16px;
+}
+
+zm\:ts {
+    display: inline-block;
+    font-size: 25px;
+    height: 12px;
+    overflow: visible;
+    position: relative;
+    top: -8px;
+    font-weight: lighter;
+    color: #666;
+}
