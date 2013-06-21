@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html manifest="manifest.php">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>Дзен-мани</title>
+<link rel="apple-touch-icon-precomposed" href="images/icon.png" />
+<link rel="apple-touch-startup-image" href="images/loadscreen.png" />
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/zenform.css">
+<link rel="stylesheet" href="css/omnibox.css">
+<!-- script src="file:///android_asset/phonegap.js"></script -->
+<script src="js/core/console.log.js"></script>
+<script src="js/core/jquery.js"></script>
+<script src="js/core/zm.utils.js"></script>
+<script src="js/zm.omnibox.js"></script>
+<script src="js/json/json2.js"></script>
+<script src="js/helpFuncs.js"></script>
+<script src="js/iscroll.js"></script>
+<script src="js/sha1.js"></script>
+<script src="js/oauth.js"></script>
+<!-- script src="google/chrome_ex_oauthsimple.js"></script>
+<script src="google/chrome_ex_oauth.js"></script -->
+<script src="js/core.js"></script>
+<script src="js/core/account.js"></script>
+<script src="js/core/category.js"></script>
+<script src="js/core/tag.js"></script>
+<script src="js/core/alert.js"></script>
+<script src="js/zencalendar.js"></script>
+<script src="js/zenform.js"></script>
+<script src="js/workplace.js"></script>
+<script src="js/renders.js"></script>
+<!-- Генераторы -->
+<script src="js/Layers/Browse.js"></script>
+<script src="js/Layers/Transactions.js"></script>
+<script src="js/Layers/Settings.js"></script>
+<script src="js/Layers/Sync.js"></script>
+<script src="js/Layers/Budget.js"></script>
+<!-- Генераторы -->
+<script src="js/interface.js"></script>
+</head>
+<body>
+<div id="page">
+	<div id="header" data-role="header">
+		<div class="bg">
+			<div id="topHeaderLeftPlace"></div>
+			<div id="topHeaderRightPlace"></div>
+			<div id="topHeaderBlock"><span class="title">Обзор</span><span class="logo"></span></div>
+		</div>
+		<div id="shadow_sinc">Синхронизация...</div>
+	</div>
+	<div id="content">
+		<div id="mainWorkplace"></div>
+	</div>
+	<div id="diff">
+		<div class="ifAuth">
+			<p class="iComment"></p>
+		</div>
+		<div class="ifNAuth"></div>
+	</div>
+</div>
+<div id="zenform-placeholder"></div>
+<div id="Layers_Lock"></div>
+<div id="loadScreen"><span style="font-size:8px; position:absolute;
+left:4px; bottom:4px;">v.1.5</span><div id="console"><p>Загрузка длится дольше обычного. Если это окно не исчезнет, то отправьте отчет на support@zenmoney.ru</p><div id="console_link_block"><a href="#" id="console_link">Отправить отчет</a></div><div id="console_body"></div></div></div>
+<div id="alertScreen">
+	<div class="overlay"></div>
+	<table>
+		<tbody>
+			<tr>
+				<td>
+					<div class="content">
+						<div class="title">Во время синхронизации возникли следующие ошибки:</div><div class="body"></div><div class="report"><a href="#">Отправить отчет</a></div><div class="button"><button class="close">Закрыть</button></div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
