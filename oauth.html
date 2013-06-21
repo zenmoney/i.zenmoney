@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Дзен-мани</title>
+<link href="css/oauth.css" media="screen" rel="stylesheet">
+<script src="google/chrome_ex_oauthsimple.js"></script>
+<script src="google/chrome_ex_oauth.js"></script>
+<script>
+function onLoad() {
+//	alert('upd');
+	ChromeExOAuth.initCallbackPage();
+};
+function success(){
+	document.getElementById('pleaseWait').style.display = 'none';
+	document.getElementById('successText').style.display = 'block';
+	setTimeout(window.parent.SINC.hide, 500);
+}
+window.addEventListener('load', onLoad, false);
+</script>
+<style>
+#successText{
+	display:none;
+}
+</style>
+</head>
+<body>
+<div id="mainWrapper">
+	<div class="inMainWrapper">
+		<div class="contentBlock">
+			<div class="sloganBlock">
+				<div id="pleaseWait" class="appInfo">Пожалуйста, подождите...</div>
+				<div id="successText" class="appInfo">Приложение авторизовано.</div>
+			</div>
+			<div class="clear">&nbsp;</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+html, body{
+	font-family:Helvetica, sans-serif;
+	font-size:15px;
+	margin:0px;
+	padding:0px;
+}
+
+.Layer{
+	position:relative;
+	width:300px;
+	height:400px;
+	border:2px solid #666666;
+	margin:1px;
+	float:left;
+}
+.Layer .reload{
+	position:absolute;
+	right:5px;
+	top:5px;
+	color:green;
+	text-decoration:underline;
+	cursor:pointer;
+	font-size:10px;
+	background:#ffffff;
+	padding:2px;
+	border-radius:3px;
+}
+.Layer .reload:hover{
+	color:red;
+	background:#ffeeee;
+}
+.Layer .header{
+	height:39px;
+	font-size:30px;
+	text-align:center;
+	border-bottom:1px solid gray;
+	overflow:hidden;
+}
+.Layer .content{
+	padding:0px 2px 0px 2px;
+	height:360px;
+	overflow:auto;
+}
+
+/* Layer_sql */
+#Layer_sql .query, #Layer_js .query{
+	margin-top:5px;
+}
+#Layer_sql .textarea, #Layer_js .textarea{
+	
+}
+#Layer_sql .submit, #Layer_js .submit{
+	margin:3px 0px 0px 50px;
+}
+#Layer_sql #textarea, #Layer_js #js_textarea{
+	font-size:20px;
+	width:98%;
+	margin:0px;
+	padding:5px 1% 5px 1%;
+	border:none;
+	outline:1px solid #666666;
+}
+#Layer_sql #submit, #Layer_js #js_submit{
+	font-size:16px;
+}
+#Layer_sql #answer, #Layer_js #js_answer{
+	margin:6px 0px 0px 0px;
+	padding:5px;
+	outline:1px solid #666666;
+}
+#Layer_sql .answer, #Layer_js .answer{
+	margin:10px 0px 0px 0px;
+}
